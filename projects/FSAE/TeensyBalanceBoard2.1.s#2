@@ -14424,11 +14424,9 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <segment>
 <label x="-66.04" y="76.2" size="1.778" layer="95"/>
 <pinref part="X1" gate="-1" pin="S"/>
-<wire x1="-66.04" y1="83.82" x2="-66.04" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="73.66" x2="-50.8" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="-35.56" y1="50.8" x2="-66.04" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="50.8" x2="-66.04" y2="73.66" width="0.1524" layer="91"/>
-<junction x="-66.04" y="73.66"/>
+<wire x1="-35.56" y1="50.8" x2="-38.1" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="50.8" x2="-66.04" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="50.8" x2="-66.04" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="-35.56" y1="50.8" x2="-35.56" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="-35.56" y1="48.26" x2="-7.62" y2="48.26" width="0.1524" layer="91"/>
 <label x="-33.02" y="48.26" size="1.778" layer="95"/>
@@ -14441,6 +14439,14 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <wire x1="-68.58" y1="83.82" x2="-66.04" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="-68.58" y1="86.36" x2="-68.58" y2="83.82" width="0.1524" layer="91"/>
 <junction x="-68.58" y="83.82"/>
+<pinref part="3V3REG" gate="G$1" pin="GND"/>
+<wire x1="-38.1" y1="60.96" x2="-38.1" y2="50.8" width="0.1524" layer="91"/>
+<junction x="-38.1" y="50.8"/>
+<pinref part="5VREG" gate="G$1" pin="GND"/>
+<wire x1="-38.1" y1="83.82" x2="-66.04" y2="83.82" width="0.1524" layer="91"/>
+<junction x="-66.04" y="83.82"/>
+<label x="-38.1" y="60.96" size="1.778" layer="95"/>
+<label x="-48.26" y="83.82" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="SFH615A-4" gate="A" pin="EMIT"/>
@@ -15472,16 +15478,18 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <segment>
 <label x="-63.5" y="96.52" size="1.778" layer="95"/>
 <pinref part="X1" gate="-2" pin="S"/>
-<wire x1="-50.8" y1="96.52" x2="-53.34" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="-53.34" y1="96.52" x2="-53.34" y2="60.96" width="0.1524" layer="91"/>
-<junction x="-53.34" y="96.52"/>
-<wire x1="-53.34" y1="60.96" x2="-38.1" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="5VREG" gate="G$1" pin="VIN"/>
 <pinref part="C29" gate="G$1" pin="+"/>
 <wire x1="-71.12" y1="96.52" x2="-68.58" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="-68.58" y1="96.52" x2="-53.34" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="96.52" x2="-50.8" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="-68.58" y1="93.98" x2="-68.58" y2="96.52" width="0.1524" layer="91"/>
 <junction x="-68.58" y="96.52"/>
+<wire x1="-53.34" y1="96.52" x2="-53.34" y2="73.66" width="0.1524" layer="91"/>
+<junction x="-53.34" y="96.52"/>
+<pinref part="3V3REG" gate="G$1" pin="VIN"/>
+<wire x1="-53.34" y1="73.66" x2="-50.8" y2="73.66" width="0.1524" layer="91"/>
+<label x="-55.88" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="R18" gate="G$1" pin="1"/>
@@ -15973,7 +15981,7 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <wire x1="12.7" y1="-17.78" x2="15.24" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="GLV_FAULT_ACTIVE_LOW" class="0">
+<net name="GLV_FAULT" class="0">
 <segment>
 <pinref part="SFH615A-4" gate="A" pin="COL"/>
 <wire x1="33.02" y1="-17.78" x2="38.1" y2="-17.78" width="0.1524" layer="91"/>
