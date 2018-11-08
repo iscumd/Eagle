@@ -1,0 +1,13 @@
+G04 Gerber job file.*
+%TF.FileFunction,JobInfo*%
+%TF.GenerationSoftware,Autodesk,EAGLE,9.0.0*%
+%TF.CreationDate,2018-07-15T17:58:39Z*%
+%TF.Part,Single*%
+%MOMM*%
+%TJ.B_Owner,Cristian Adam <cradam@umd.umich.edu>*%
+%TJ.B_ID,9235HallEffectV1.0*%
+%TJ.B_LayerNum,2*%
+%TJ.B_Thickness,1.570000*%
+%TJ.B_Size_X,15.956706*%
+%TJ.B_Size_Y,34.000000*%
+M02*
